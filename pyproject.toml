@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ai-chat"
+version = "0.1.0"
+description = ""
+authors = ["Michael Bost <mbost@gocloudforce.com>"]
+readme = "README.md"
+packages = [{include = "ai_chat", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+quart = "^0.19.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
