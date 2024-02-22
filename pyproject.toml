@@ -9,8 +9,12 @@ packages = [{include = "ai_chat", from = "src"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 quart = "^0.19.4"
+openai = "^1.12.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "ai_chat:run"
